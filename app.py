@@ -5,10 +5,8 @@ from flask_limiter.util import get_remote_address
 import sqlite3
 import logging
 
-# Initialize the Flask application
 app = Flask(__name__)
 
-# Set up caching
 cache = Cache(app, config={'CACHE_TYPE': 'SimpleCache'})
 
 # Initialize Flask-Limiter with rate-limiting per API key
